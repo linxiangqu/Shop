@@ -31,10 +31,6 @@ public class AddBankOrAlipayActivity extends BaseActivity implements IDefineView
     private Button ok;
     private String cardName, cardNo, cardNetwork, cardCompany;
 
-    /**
-     * jhnj
-     * @param savedInstanceState
-     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
