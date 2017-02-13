@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/background_percentage_sj"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fragment_myassets_jifen_tv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@mipmap/points_background_sj"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="充值"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/fragment_myassets_jifen_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/fragment_myassets_jifen_radiobutton_one"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_radiogroup_item"
+                android:button="@null"
+                android:gravity="center"
+                android:text="10元"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/fragment_myassets_jifen_radiobutton_two"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_radiogroup_item"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="50元"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/fragment_myassets_jifen_radiobutton_three"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_radiogroup_item"
+                android:button="@null"
+                android:gravity="center"
+                android:text="100元"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/fragment_myassets_jifen_edt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_black"
+            android:hint="请输入充值的金额（必须是10的倍数）"
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/fragment_myassets_jifen_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/submit_point_sj"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

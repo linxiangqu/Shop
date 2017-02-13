@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_buywithsend_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/activity_buywithsend_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/activity_buywithsend_send"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/salewithsend_bg"
+            android:gravity="left|top"
+            android:padding="3dp"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_margin="15dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_buywithsend_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text=" "
+            android:textColor="#454c41"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/activity_buywithsend_price"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="￥ "
+            android:textColor="#f63939"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

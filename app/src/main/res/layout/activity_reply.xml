@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.linxiangqu.shop.activity.ReplyActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/activity_reply_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        android:gravity="start"
+        android:hint="写评论……"
+        android:padding="10dip"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/activity_reply_isanonymity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="匿名" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/activity_reply_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_reply"
+        android:text="发表"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

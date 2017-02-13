@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AddBankOrAlipayActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/activity_takecash_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/activity_takecash_bank_xm"
+            style="@style/EditTextTakeCash"
+            android:layout_width="match_parent"
+            android:hint="姓名" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:background="@color/gray" />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/activity_takecash_bank_kh"
+            style="@style/EditTextTakeCash"
+            android:layout_width="match_parent"
+            android:hint="卡号" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/activity_takecash_bank_yhxz"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:text="银行选择"
+            android:textColor="@color/gray"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:background="@color/gray" />
+
+        <EditText
+            android:id="@+id/activity_takecash_bank_szwd"
+            style="@style/EditTextTakeCash"
+            android:layout_width="match_parent"
+            android:hint="所在网点（选填）" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:background="@color/gray" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/activity_takecash_zfb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/activity_takecash_zfb_xm"
+            style="@style/EditTextTakeCash"
+            android:layout_width="match_parent"
+            android:hint="姓名" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:background="@color/gray" />
+
+        <EditText
+            android:id="@+id/activity_takecash_zfb_zh"
+            style="@style/EditTextTakeCash"
+            android:layout_width="match_parent"
+            android:hint="支付宝账号" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:background="@color/gray" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_takecash_btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="50dp"
+        android:background="@mipmap/denglubackground_sj"
+        android:text="确定添加"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

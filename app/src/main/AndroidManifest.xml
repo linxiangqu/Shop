@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.linxiangqu.shop">
+
+    <!-- 友盟分享 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- 友盟分享 -->
+
+
+    <!-- if you want to load images from the internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WelcomeActivity"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".activity.ClipImageActivity" />
+        <activity android:name=".activity.GoodsActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.UserActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.ForgetPasswordActivity" />
+        <activity android:name=".activity.ScanActivity" />
+        <activity android:name=".activity.OrderActivity" />
+        <activity android:name=".activity.FenLeiActivity" />
+        <activity android:name=".activity.TopicGoodsActivity" />
+        <activity android:name=".activity.MyAssetsActivity" />
+        <activity android:name=".activity.InviteCodeActivity" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.AddBankOrAlipayActivity" />
+        <activity android:name=".activity.TiXianHistoryActivity" />
+        <activity android:name=".activity.AddressActivity" />
+        <activity android:name=".activity.AddAddressActivity" />
+        <activity android:name=".activity.SafetyActivity" />
+        <activity android:name=".activity.FavoritesActivity" />
+        <activity android:name=".activity.CreatGoodsOrderActivity" />
+        <activity android:name=".activity.BuyWithSendActivity" />
+        <activity android:name=".activity.BankAndAlipayActivity" />
+        <activity android:name=".activity.UserBankAndAlipayActivity" />
+        <activity android:name=".activity.SignInActivity" />
+        <activity android:name=".activity.MyPlatformActivity" />
+        <activity android:name=".activity.ShangPinQuActivity" />
+        <activity android:name=".activity.DongTaiActivity" />
+        <activity android:name=".activity.JiaoLiuQuActivity" />
+        <activity android:name=".activity.ReplyActivity" />
+        <activity android:name=".activity.FaTieActivity" />
+        <activity
+            android:name=".photopicker.PhotoPickerActivity"
+            android:theme="@style/customTheme" />
+        <activity
+            android:name=".photopicker.PhotoPagerActivity"
+            android:theme="@style/customTheme" />
+        <activity android:name=".activity.FaBuActivity" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57eb56fa67e58eb3ba0033df" />
+    </application>
+
+</manifest>
