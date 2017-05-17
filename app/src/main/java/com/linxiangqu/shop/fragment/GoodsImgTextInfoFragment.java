@@ -19,6 +19,9 @@ public class GoodsImgTextInfoFragment extends BaseFragment {
     private String goodsImageText;
     private boolean hasInited = false;
 
+
+
+
     public GoodsImgTextInfoFragment(String goodsImageText) {
         this.goodsImageText = goodsImageText;
     }
