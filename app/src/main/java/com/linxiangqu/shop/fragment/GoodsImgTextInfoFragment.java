@@ -26,6 +26,8 @@ public class GoodsImgTextInfoFragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         if (mView == null) {
+
+
             mView = inflater.inflate(R.layout.fragment_goods_info_webview, container, false);
             webview = (VerticalWebView) mView.findViewById(R.id.webView);
             initView();
