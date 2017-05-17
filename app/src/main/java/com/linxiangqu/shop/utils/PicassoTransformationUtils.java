@@ -44,7 +44,6 @@ public class PicassoTransformationUtils implements Transformation {
         float r = size / 2f;
         canvas.drawCircle(r, r, r, paint);
 
-
 //        Paint paint1 = new Paint();
 //        paint1.setShader(shader);
 //        paint1.setAntiAlias(true);

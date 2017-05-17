@@ -43,7 +43,6 @@ public class GoodsImgTextInfoFragment extends BaseFragment {
             webview.getSettings().setUseWideViewPort(true);
             webview.getSettings().setLoadWithOverviewMode(true);
             webview.loadDataWithBaseURL(Config.IP, goodsImageText, "text/html", "utf-8", "");
-//            webview.loadUrl("https://github.com/jeasonlzy0216");
         }
     }
 
