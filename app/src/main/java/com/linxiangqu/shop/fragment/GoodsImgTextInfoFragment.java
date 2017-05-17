@@ -23,6 +23,9 @@ public class GoodsImgTextInfoFragment extends BaseFragment {
         this.goodsImageText = goodsImageText;
     }
 
+
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         if (mView == null) {
